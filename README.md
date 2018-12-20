@@ -4,6 +4,10 @@
 # Creador y Clientes
 Este proyecto ha sido creado por Adrian Cecilia Ogalla para Francis Mateu y Aliance-Brother, S.L.
 
+# Programas Necesarios para el uso
+
+    -   MongoDB
+
 
 # Descripción del Proyecto/Programa
 
