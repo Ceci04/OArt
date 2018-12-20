@@ -1,0 +1,64 @@
+body {
+    background: #136a8a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #136a8a, #267871);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #136a8a, #267871);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.box-original {
+    background: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.box-escultura {
+    background: blue;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.box-grafica {
+    background: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.box-fotografia {
+    background: green;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.box-mosaico {
+    background: cyan;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.box-antiguedades {
+    background: grey;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.box-tapices {
+    background: fuchsia;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}

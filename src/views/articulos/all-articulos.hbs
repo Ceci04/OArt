@@ -1,0 +1,46 @@
+
+<br><br>
+
+<div class="row">
+    {{#each articulos}}
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <center><img src="img/{{img}}" width="50%" height="50%"></center>
+                <br>
+                <div class="box-{{tipo}}"></div>
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    <b class="number text-primary">Nº de la Obra: {{numObra}} </b>
+                    <a href="/articulos/edit/{{_id}}" class="text-warning">Editar</a>
+                    <a href="/print/{{_id}}" class="text-danger">Imprimir</a>
+                </h4>
+                <p><b>Autor:</b> {{autor}}</p>
+                <p><b>Titulo:</b> {{titulo}}</p>
+                <p><b>Año de Realización:</b> {{realizado}}</p>
+                <p><b>Procedimiento:</b> {{procedimiento}}</p>
+                <p><b>Medidas:</b> {{medidas}}</p>
+                <p><b>Procedencia:</b> {{procedencia}}</p>
+                <p><b>Preció:</b> {{precio}}</p>
+                <p><b>Catalogo:</b> {{catalogo}}</p>
+                <p><b>Ubicación:</b> {{ubicacion}}</p>
+                <p><b>Descripción:</b> {{descripcion}}</p>
+                <p><b>Notas:</b> {{notas}}</p>
+
+                <form action="/articulos/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button class="btn btn-danger btn-block btn-md" type="submit">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <div class="card mx-auto">
+        <div class="card-body">
+            <p class="lead">No ha articulos en la base de datos.</p>
+            <a href="/articulos/add" class="btn btn-success btn-block btn-warning">Introducir Articulos</a>
+        </div>
+    </div>
+    {{/each}}
+</div>

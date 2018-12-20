@@ -1,0 +1,59 @@
+
+<br><br>
+
+<div class="col-md-5 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3>Editar Articulo</h3>
+        </div>
+        <div class="card-body">
+            <form action="/articulos/edit-articulo/{{articulo._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+
+                    <div class="form-row">
+                        <div class="col">
+                            <input type="text" name="numObra" class="form-control" placeholder="Nº de la Obra"
+                                autofocus value="{{articulo.numObra}}">
+                        </div>
+                        <div class="col">
+                            <select name="tipo" class="form-control">
+                                <option value="original">Obra Original</option>
+                                <option value="escultura">Esculturas</option>
+                                <option value="grafica">Obra Grafica</option>
+                                <option value="fotografia">Fotografia</option>
+                                <option value="mosaico">Mosaico</option>
+                                <option value="antiguedades">Antiguedades</option>
+                                <option value="tapices">Tapices</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <input type="text" name="autor" class="form-control" placeholder="Autor" value="{{articulo.autor}}">
+                    <input type="text" name="titulo" class="form-control" placeholder="Titulo" value="{{articulo.titulo}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="realizado" class="form-control" placeholder="Año de Realización" value="{{articulo.realizado}}">
+                    <input type="text" name="procedimiento" class="form-control" placeholder="Procedimiento" value="{{articulo.procedimiento}}">
+                    <input type="text" name="medidas" class="form-control" placeholder="Medidas" value="{{articulo.medidas}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="procedencia" class="form-control" placeholder="Procedencia" value="{{articulo.procedencia}}">
+                    <input type="text" name="precio" class="form-control" placeholder="Precio" value="{{articulo.precio}}">
+                    <input type="text" name="catalogo" class="form-control" placeholder="Catalogo" value="{{articulo.catalogo}}">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="img" class="form-control" placeholder="Nombre de la Imagen" value="{{articulo.img}}">
+                    <input type="text" name="ubicacion" class="form-control" placeholder="Ubicación" value="{{articulo.ubicacion}}">
+                    <textarea name="descripcion" class="form-control" placeholder="Descripción" value="{{articulo.descripcion}}"></textarea>
+                    <textarea name="notas" class="form-control" placeholder="Notas" value="{{articulo.notas}}"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
