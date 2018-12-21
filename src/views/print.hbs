@@ -4,6 +4,7 @@
 <div class="row">
     <div class="col-sm bg-light rounded">
         <h2 class="display-2">Ficha de la Obra: {{articulo.numObra}}</h2>
+        <button class="btn btn-danger" id="print" onclick="window.print();">Imprimir</button>
         <div class="row">
             <div class="col-md">
                 <img src="/img/{{articulo.img}}" class="col-lg">
@@ -34,10 +35,6 @@
                 <h3 class="col-sm-9">Notas:</h3>
                 <h5 class="col-sm-9">{{articulo.notas}}</h5>
             </div>
-        </div>
-        <br>
-        <div class="row justify-content-center">
-            <button class="btn btn-danger" id="print" onclick="window.print();">Imprimir</button>
         </div>
         <br>
     </div>
