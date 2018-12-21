@@ -1,9 +1,40 @@
-
-
 <br><br>
 
-<div class="content">
-    <h1 class="display-1">Ficha Obra </h1>
 
-    <img src="../public/img/18-P.Pastor.png" alt="18-P.Pastor.png">
+<div class="row">
+    <div class="col-sm bg-light rounded">
+        <h2 class="display-2">Ficha de la Obra: {{articulo.numObra}}</h2>
+        <div class="row">
+            <div class="col-md">
+                <img src="/img/{{articulo.img}}" class="col-lg">
+            </div>
+            <div class="col-md">
+                <h3 class="col-sm-9">Autor: {{articulo.autor}}</h3>
+                <br>
+                <h3 class="col-sm-9">Titulo de la Obra:</h3>
+                <h5 class="col-sm-9">{{articulo.titulo}}</h5>
+                <br>
+                <h3 class="col-sm-9">Ubicación:</h3>
+                <h5 class="col-sm-9">{{articulo.ubicacion}}</h5>
+                <br>
+                <h3 class="col-sm-9">Medidas: {{articulo.medidas}}</h3>
+                
+                <br>
+                <h3 class="col-sm-9">Año de Realización: {{articulo.realizado}}</h3>
+                <br>
+                <h3 class="col-sm-9">Procedimiento:</h3>
+                <h5 class="col-sm-9">{{articulo.procedimiento}}</h5>
+                <br>
+                <h3 class="col-sm-9">Procedencia:</h3>
+                <h5 class="col-sm-9">{{articulo.procedencia}}</h5>
+                <br>
+                <h3 class="col-sm-9">Descripción:</h3>
+                <h5 class="col-sm-9">{{articulo.descripcion}}</h5>
+                <br>
+                <h3 class="col-sm-9">Notas:</h3>
+                <h5 class="col-sm-9">{{articulo.notas}}</h5>
+            </div>
+        </div>
+        <br>
+    </div>
 </div>
