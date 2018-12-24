@@ -53,12 +53,14 @@ router.post('/articulos/nuevo-articulo', async (req, res) => {
     res.redirect('/articulos');
 });
 
+// CARGA TODOS LOS ARTICULOS
 router.get('/articulos', async (req, res) => {
     const articulos = await Articulo.find();
     res.render('articulos/all-articulos', {
         articulos
     });
 });
+
 
 // EDITAR LOS ARTICULOS
 router.get('/articulos/edit/:id', async (req, res) => {
@@ -158,31 +160,6 @@ router.delete('/articulos/delete/:id', async (req, res) => {
     await Articulo.findByIdAndDelete(req.params.id);
     req.flash('success_msg', 'Articulo Borrado Correctamente');
     res.redirect('/articulos');
-});
-
-
-// TIPOS DE ARTICULOS
-
-router.get('/articulos/original', (req, res) => {
-    res.render('articulos/obras/original');
-});
-router.get('/articulos/escultura', (req, res) => {
-    res.render('articulos/obras/escultura');
-});
-router.get('/articulos/grafica', (req, res) => {
-    res.render('articulos/obras/grafica');
-});
-router.get('/articulos/fotografia', (req, res) => {
-    res.render('articulos/obras/fotografia');
-});
-router.get('/articulos/mosaicos', (req, res) => {
-    res.render('articulos/obras/mosaicos');
-});
-router.get('/articulos/antiguedades', (req, res) => {
-    res.render('articulos/obras/antiguedades');
-});
-router.get('/articulos/tapices', (req, res) => {
-    res.render('articulos/obras/tapices');
 });
 
 module.exports = router;

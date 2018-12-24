@@ -75,3 +75,7 @@ body {
             display: none;
         }
 }
+
+.card {
+    margin-top: 5%;
+}
