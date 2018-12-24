@@ -162,4 +162,17 @@ router.delete('/articulos/delete/:id', async (req, res) => {
     res.redirect('/articulos');
 });
 
+
+// TIPOS DE ARTICULOS
+
+
+// CARGA LOS ARTICULOS EN ORIGINAL
+
+router.get('/articulos/original', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/original', {
+        articulos
+    });
+});
+
 module.exports = router;

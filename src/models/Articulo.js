@@ -5,7 +5,7 @@ const {
 
 const articuloSchema = new Schema({
     numObra: {
-        type: String,
+        type: Number,
         required: true
     },
     autor: {
