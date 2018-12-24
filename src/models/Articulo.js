@@ -3,7 +3,7 @@ const {
     Schema
 } = mongoose;
 
-const ArticuloSchema = new Schema({
+const articuloSchema = new Schema({
     numObra: {
         type: String,
         required: true
@@ -66,4 +66,4 @@ const ArticuloSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Articulo', ArticuloSchema);
+module.exports = mongoose.model('articulo', articuloSchema);
