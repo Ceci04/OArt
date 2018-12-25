@@ -1,0 +1,52 @@
+<br><br>
+
+{{#each articulos}}
+<div class="col-md-8">
+    <script>
+        // ESTO FUNCIONA PERO NO MUESTRA CORRECTAMENTE LAS TARJETAS 
+        numObra = {{ numObra }};
+
+        if (numObra < 300 || numObra > 400) {
+            document.write('<div class="card" style="display:none;">');
+        } else {
+            document.write('<div class="card" style="background:#fff; padding:5%;"');
+        }
+    </script>
+    <div class='card-body'>
+        <center><img src="../img/{{img}}" width="50%" height="50%"></center>
+        <br>
+        <div class="box-{{tipo}}"></div>
+        <h3 class="card-title d-flex justify-content-between align-items-center">
+            <b class="text-danger">Nº de la Obra: {{ numObra }} </b>
+            <a href="/articulos/edit/{{_id}}" role="button" class="btn btn-success">Editar</a>
+            <a href="/print/{{_id}}" role="button" class="btn btn-warning">Imprimir</a>
+        </h3>
+        <p><b>Autor:</b> {{ autor }}</p>
+        <p><b>Titulo:</b> {{ titulo }}</p>
+        <p><b>Año de Realización:</b> {{ realizado }}</p>
+        <p><b>Procedimiento:</b> {{ procedimiento }}</p>
+        <p><b>Medidas:</b> {{ medidas }}</p>
+        <p><b>Procedencia:</b> {{ procedencia }}</p>
+        <p><b>Preció:</b> {{ precio }}</p>
+        <p><b>Catalogo:</b> {{ catalogo }}</p>
+        <p><b>Ubicación:</b> {{ ubicacion }}</p>
+        <p><b>Descripción:</b> {{ descripcion }}</p>
+        <p><b>Notas:</b> {{ notas }}</p>
+
+        <form action="/articulos/delete/{{_id}}?_method=DELETE" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            <button class="btn btn-danger btn-block btn-md" type="submit">
+                Eliminar
+            </button>
+        </form>
+    </div>
+</div>
+{{else}}
+<div class="card mx-auto">
+    <div class="card-body">
+        <p class="lead">No ha articulos en la base de datos.</p>
+        <a href="/articulos/add" class="btn btn-success btn-block btn-warning">Introducir Articulos</a>
+    </div>
+</div>
+{{/each}}
+</div>

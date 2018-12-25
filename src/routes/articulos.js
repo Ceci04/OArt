@@ -175,4 +175,46 @@ router.get('/articulos/original', async (req, res) => {
     });
 });
 
+router.get('/articulos/esculturas', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/esculturas', {
+        articulos
+    });
+});
+
+router.get('/articulos/obras-graficas', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/obras-graficas', {
+        articulos
+    });
+});
+
+router.get('/articulos/fotografia', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/fotografia', {
+        articulos
+    });
+});
+
+router.get('/articulos/mosaicos', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/mosaicos', {
+        articulos
+    });
+});
+
+router.get('/articulos/antiguedades', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/antiguedades', {
+        articulos
+    });
+});
+
+router.get('/articulos/tapices', async (req, res) => {
+    const articulos = await Articulo.find();
+    res.render('articulos/obras/tapices', {
+        articulos
+    });
+});
+
 module.exports = router;

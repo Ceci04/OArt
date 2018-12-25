@@ -8,9 +8,22 @@
             <li class="nav-item">
                 <a class="nav-link active" href="/articulos">Lista de Obras</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link active" href="/articulos/original" >Obras Originales</a>
-            </li>
+        </ul>
+        <ul class="navbar-inline my-2 my-lg-0">
+            <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Filtro de Obras
+                </button>
+                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                    <a href="/articulos/original" class="dropdown-item text-light bg-transparent">Obras Originales</a>
+                    <a href="/articulos/esculturas" class="dropdown-item text-light  bg-transparent">Esculturas</a>
+                    <a href="/articulos/obras-graficas" class="dropdown-item text-light bg-transparent">Obras Gráficas</a>
+                    <a href="/articulos/fotografia" class="dropdown-item text-light bg-transparent">Fotografía</a>
+                    <a href="/articulos/mosaicos" class="dropdown-item text-light bg-transparent">Mosaicos</a>
+                    <a href="/articulos/antiguedades" class="dropdown-item text-light bg-transparent">Antiguedades</a>
+                    <a href="/articulos/tapices" class="dropdown-item text-light bg-transparent">Tapices</a>
+                </div>
         </ul>
         <ul class="navbar-inline my-2 my-lg-0">
             <a class="nav-link text-warning" href="/help">Ayuda</a>
