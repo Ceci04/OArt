@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://ceci:ceci1234@ds129914.mlab.com:29914/o-art-database', {
+mongoose.connect('mongodb://localhost/articulos-db', {
     useCreateIndex: true,
     useNewUrlParser: true,
     useFindAndModify: false
