@@ -20,6 +20,7 @@ Apartados de la Aplicación
 
     -   Crear Tarjeta
     -   Ver Listado de Tarjetas
+    -   Filtrar por Tipo de Obra
     -   Modificar Tarjeta
     -   Imprimir Tarjeta
     -   Ayuda
@@ -47,5 +48,5 @@ Este apartado nos mostrara una vista previa de la tarjeta con la información de
 
 # Ayuda
 
-Este apartado esta enfocado a informar y recordar al usuario que utiliza la aplicacion posibles temas que tengan alguna dificultad o puedan ser complejos.
+Este apartado esta enfocado a informar y recordar al usuario que utiliza la aplicacion posibles temas que tengan alguna dificultad o puedan ser complejos y encontrar el apartado de problemas donde encontrara un enlace al repositorio donde podra crear un ticket con el problema o error que encuentre.
 
